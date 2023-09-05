@@ -1,0 +1,36 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh; 
+}
+
+.song-list-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px; 
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 80%; 
+  text-align: left;
+  background-image: linear-gradient(to bottom, rgb(111, 7, 111), rgb(182, 80, 80), orange);
+}
+
+
+th {
+  background-color: #f2f2f2; 
+  padding: 10px;
+  font-weight: 600;
+  font-size: 1.3rem;
+  border: 1px solid #ddd;
+}
+
+
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 1.1rem;
+}
