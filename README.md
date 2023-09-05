@@ -31,3 +31,18 @@ Before you dive into running this project, please take a moment to review the fo
 ## RUN THIS PROJECT
 
 ![Screenshot from 2023-09-05 20-14-41](https://github.com/PeryShahar/song-list/assets/89962400/d01604b1-35e2-470d-b0c8-b66114942c63)
+
+```
+git clone https://github.com/PeryShahar/song-list.git
+
+cd song-list/packages/client
+
+     npm install
+     npm start
+
+cd song-list/packages/server
+
+     npm install
+     npm run start:dev
+
+```
