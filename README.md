@@ -8,7 +8,7 @@ Before you dive into running this project, please take a moment to review the fo
 
   https://peryshahar.notion.site/Computers-b7d4581a38e444229b72e92ba25f85d1?pvs=4
 
-## TECHNOLOGIES\*
+## TECHNOLOGIES
 
 - Monorepo: I haven't had the opportunity to implement a monorepo myself, so I wanted to challenge myself and give it a try.
 
@@ -27,4 +27,5 @@ Before you dive into running this project, please take a moment to review the fo
 - Production-Ready: I understand the core concept of preparing a project for production, but some configuration details may be missing in the Docker Compose file, environment variables, and certain scripts. (I've included the init.sql file for reference.)
 
 ## RUN THIS PROJECT
+
 ![songlist](https://github.com/PeryShahar/song-list/assets/89962400/a58eebaa-c98d-4cc5-b514-df682d062881)
