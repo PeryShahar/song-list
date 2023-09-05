@@ -5,6 +5,7 @@ import * as csvParser from 'csv-parser';
 
 import { Song } from 'src/songs/entities/song.entity';
 import { SongsService } from 'src/songs/songs.service';
+var path = require('path')
 
 @Injectable()
 export class CsvService {
@@ -15,9 +16,9 @@ export class CsvService {
 
     async insertCsvFileToDb() {
         try {
-            const csvFilePath = '../assets/song_list.csv';
+            const fullPath = path.join(__dirname, '../../src/assets/song_list.csv')
 
-            const stream = fs.createReadStream(csvFilePath);
+            const stream = fs.createReadStream(fullPath);
       
             stream.pipe(csvParser()) // Pipe the CSV stream through csv-parser
               .on('data', async (row) => {
