@@ -31,3 +31,5 @@ Before you dive into running this project, please take a moment to review the fo
 ## RUN THIS PROJECT
 
 ![songlist](https://github.com/PeryShahar/song-list/assets/89962400/a58eebaa-c98d-4cc5-b514-df682d062881)
+
+- Unfortunately, I couldn't get it to work as expected. There seems to be some missing configuration related to establishing the connection between the client and server, as well as with the PostgreSQL database.
