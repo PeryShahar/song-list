@@ -20,13 +20,14 @@ export default function SongList() {
 
     useEffect(() => {
         setSongs(songList)
-        // fetchAlbums()
+        fetchAlbums()
     }, [])
 
-    // const fetchAlbums = async () => {
-    //     const {data} = axios.get('http://localhost:3000/songs');
-    //     setSongs(data)
-    // }
+    const fetchAlbums = async () => {
+        const data = axios.get('/songs');
+        console.log('data: ', data);
+        // setSongs(data)
+    }
 
     return <main>
         <h1 className="song-list-title">Song List</h1>
