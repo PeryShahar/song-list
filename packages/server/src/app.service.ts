@@ -8,7 +8,7 @@ export class AppService implements OnModuleInit {
     ) {}
     
     async onModuleInit() {
-    await this.csvService.insertCsvFileToDb()
+    // await this.csvService.insertCsvFileToDb()
     }
 
   getHello(): string {
