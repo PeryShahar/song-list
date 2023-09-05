@@ -27,3 +27,4 @@ Before you dive into running this project, please take a moment to review the fo
 - Production-Ready: I understand the core concept of preparing a project for production, but some configuration details may be missing in the Docker Compose file, environment variables, and certain scripts. (I've included the init.sql file for reference.)
 
 ## RUN THIS PROJECT
+![songlist](https://github.com/PeryShahar/song-list/assets/89962400/a58eebaa-c98d-4cc5-b514-df682d062881)
