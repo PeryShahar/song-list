@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import * as fs from 'fs';
-import * as csv from 'csv-parser';
+import * as csvParser from 'csv-parser';
 
 import { Song } from 'src/songs/entities/song.entity';
 import { SongsService } from 'src/songs/songs.service';
@@ -10,33 +10,35 @@ import { SongsService } from 'src/songs/songs.service';
 export class CsvService {
     constructor(
         @InjectRepository(Song)
-        private readonly songsService: SongsService
+        private readonly songsService: SongsService,
       ){}
 
-    insertCsvFileToDb() {
+    async insertCsvFileToDb() {
         console.log('hi')
         try {
             const csvFilePath = '../assets/song_list.csv';
-            const stream = fs.createReadStream(csvFilePath);
+
+            // const stream = fs.createReadStream(csvFilePath);
+            // console.log('stream: ', stream);
       
-            stream.pipe(csv()) // Pipe the CSV stream through csv-parser
-              .on('data', async (row) => {
-                const songName = row['Song Name'].trim().toLowerCase();
-                const band = row['Band'].trim().toLowerCase();
-                const year = row['Year'].trim().toLowerCase();
+            // stream.pipe(csvParser()) // Pipe the CSV stream through csv-parser
+            //   .on('data', async (row) => {
+            //     const songName = row['Song Name'].trim().toLowerCase();
+            //     const band = row['Band'].trim().toLowerCase();
+            //     const year = row['Year'].trim().toLowerCase();
       
-                // Create a new Song entity
-                const song = new Song();
-                song.songName = songName;
-                song.band = band;
-                song.year = year;
+            //     // Create a new Song entity
+            //     const song = new Song();
+            //     song.songName = songName;
+            //     song.band = band;
+            //     song.year = year;
       
-                // Insert the song data into the database using the SongsService
-                await this.songsService.insertSong(song);
-              })
-              .on('end', () => {
-                console.log('CSV file processing finished.');
-              });
+            //     // Insert the song data into the database using the SongsService
+            //     await this.songsService.insertSong(song);
+            //   })
+            //   .on('end', () => {
+            //     console.log('CSV file processing finished.');
+            //   });
           } catch (error) {
             throw new Error(`Error inserting CSV data into the database: ${error.message}`);
           }
