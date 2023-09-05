@@ -12,9 +12,9 @@ Before you dive into running this project, please take a moment to review the fo
 
 - Monorepo: I haven't had the opportunity to implement a monorepo myself, so I wanted to challenge myself and give it a try.
 
-- Create React App: For creating my React application, I ultimately opted to use 'npx create-react-app.' While I acknowledge that it's been around for a while, I preferred its simplicity. React's documentation suggests alternative options like Next, Remix, or Vite, which are considered meta-frameworks.
+- Create React App: For creating my React application, I ultimately opted to use 'npx create-react-app.' While I acknowledge that it's been around for a while, I preferred its simplicity. React's documentation suggests alternative meta-frameworks options like Next and Remix, or use Vite.
 
-- ORM: I opted for TypeOrm because it's familiar to me, but I'm considering exploring Prisma as well.
+- ORM: I went for TypeOrm because it's familiar to me, but I'm considering exploring Prisma as well.
 
 - Data Fetching: There are various methods to fetch data, ranging from AJAX requests to using libraries like Fetch, Axios, and React Query, which builds upon these. I decided to use axios, as it's sufficient for simpler applications.
 
@@ -31,5 +31,3 @@ Before you dive into running this project, please take a moment to review the fo
 ## RUN THIS PROJECT
 
 ![Screenshot from 2023-09-05 20-14-41](https://github.com/PeryShahar/song-list/assets/89962400/d01604b1-35e2-470d-b0c8-b66114942c63)
-
-
