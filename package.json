@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prepare-dev-nestjs": "cd packages/server && npm install",
-    "prepare-dev-react-app": "cd packages/client && npm install",
+    "prepare-dev-server": "cd packages/server && npm install",
+    "prepare-dev-client": "cd packages/client && npm install",
     "prepare-dev-env": "npm run prepare-dev-server && npm run prepare-dev-client",
     "generate-api-client": "docker-compose up --build openapi_generator",
     "update-api-client": "sh ./scripts/update-api.sh",

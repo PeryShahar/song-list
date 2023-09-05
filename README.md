@@ -35,6 +35,10 @@ Before you dive into running this project, please take a moment to review the fo
 ```
 git clone https://github.com/PeryShahar/song-list.git
 
+- Install all the dependencies with npm run prepare-dev-env
+- To start the dev environment, type in docker-compose up inside the root folder (song-list).
+    Client (React) is available on http://localhost:3000.
+
 cd song-list/packages/client
 
      npm install
