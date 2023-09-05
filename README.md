@@ -12,9 +12,11 @@ Before you dive into running this project, please take a moment to review the fo
 
 - Monorepo: I haven't had the opportunity to implement a monorepo myself, so I wanted to challenge myself and give it a try.
 
+- Create React App: For creating my React application, I ultimately opted to use 'npx create-react-app.' While I acknowledge that it's been around for a while, I preferred its simplicity. React's documentation suggests alternative options like Next, Remix, or Vite, which are considered meta-frameworks.
+
 - ORM: I opted for TypeOrm because it's familiar to me, but I'm considering exploring Prisma as well.
 
-- Data Fetching: There are various methods to fetch data, ranging from AJAX requests to using libraries like Fetch, Axios, and React Query, which builds upon these. I decided to use React Query, even though it may seem a bit magical, as it's sufficient for simpler applications.
+- Data Fetching: There are various methods to fetch data, ranging from AJAX requests to using libraries like Fetch, Axios, and React Query, which builds upon these. I decided to use axios, as it's sufficient for simpler applications.
 
 - Postgres: Although I lacked prior experience with it, I chose to use this database. My motivation was to learn new commands, and it aligns with the database you all are using.
 

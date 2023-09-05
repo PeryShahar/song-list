@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import { useQuery } from "react-query";
-import { songsApi } from "../api/api";
+import axios from "axios";
 
 interface Song {
     id?: number;
@@ -22,16 +21,12 @@ export default function SongList() {
         ]
 
         setSongs(data)
+        // fetchAlbums()
     }, [])
 
-    // const { isLoading, error, data } = useQuery(`songs_find_all_`, () =>
-    //     songsApi.songsControllerFindAll()
-    // );
-    // console.log('data: ', data);
-
-    // if (isLoading) return <div>Loading...</div>;
-
-    // if (error as Error) return <div>An error has occurred</div>;
+    const fetchAlbums = async () => {
+        const data = axios.get('http://localhost:3000/songs');
+    }
 
     return <main>
         <h1 className="song-list-title">Song List</h1>
