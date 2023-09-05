@@ -7,26 +7,26 @@ interface Song {
     band: string;
     year: number;
 }
+const songList = [
+    { songName: 'crazy', band: 'aerosmith', year: 1990 },
+    { songName: 'with or without you', band: 'u2', year: 1988 },
+    { songName: 'billy jean', band: 'michael jackson', year: 1982 },
+    { songName: 'imagine', band: 'john lennon', year: 1971 },
+    { songName: 'bohemian rhapsody', band: 'queen', year: 1990 },
+]
 
 export default function SongList() {
     const [songs, setSongs] = useState<Song[]>([])
 
     useEffect(() => {
-        const data = [
-            { songName: 'crazy', band: 'aerosmith', year: 1990 },
-            { songName: 'with or without you', band: 'u2', year: 1988 },
-            { songName: 'billy jean', band: 'michael jackson', year: 1982 },
-            { songName: 'imagine', band: 'john lennon', year: 1971 },
-            { songName: 'bohemian rhapsody', band: 'queen', year: 1990 },
-        ]
-
-        setSongs(data)
+        setSongs(songList)
         // fetchAlbums()
     }, [])
 
-    const fetchAlbums = async () => {
-        const data = axios.get('http://localhost:3000/songs');
-    }
+    // const fetchAlbums = async () => {
+    //     const {data} = axios.get('http://localhost:3000/songs');
+    //     setSongs(data)
+    // }
 
     return <main>
         <h1 className="song-list-title">Song List</h1>
