@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
 
 interface Song {
     id?: number;
@@ -24,9 +23,10 @@ export default function SongList() {
     }, [])
 
     const fetchAlbums = async () => {
-        const data = axios.get('/songs');
-        console.log('data: ', data);
-        // setSongs(data)
+        console.log('fetch')
+        fetch("http://localhost:3001/songs")
+            .then((res) => res.json())
+            .then((data) => console.log(data))
     }
 
     return <main>
