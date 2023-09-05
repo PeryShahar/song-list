@@ -1,4 +1,4 @@
-**NOTES**
+## NOTES
 
 Before you dive into running this project, please take a moment to review the following notes:
 
@@ -8,7 +8,7 @@ Before you dive into running this project, please take a moment to review the fo
 
   https://peryshahar.notion.site/Computers-b7d4581a38e444229b72e92ba25f85d1?pvs=4
 
-**TECHNOLOGIES**
+## TECHNOLOGIES\*
 
 - Monorepo: I haven't had the opportunity to implement a monorepo myself, so I wanted to challenge myself and give it a try.
 
@@ -26,4 +26,4 @@ Swagger/OpenAPI is an excellent resource for documenting your API. I've recently
 
 - Production-Ready: I understand the core concept of preparing a project for production, but some configuration details may be missing in the Docker Compose file, environment variables, and certain scripts. (I've included the init.sql file for reference.)
 
-**RUN THIS PROJECT**
+## RUN THIS PROJECT
