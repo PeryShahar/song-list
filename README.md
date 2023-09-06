@@ -36,7 +36,7 @@ Before you dive into running this project, please take a moment to review the fo
 git clone https://github.com/PeryShahar/song-list.git
 ```
 
-**Docker:**
+## **Docker:**
 
 - Install all the dependencies with
 
@@ -53,9 +53,9 @@ docker-compose up
 inside the root folder (song-list).
 Client (React) is available on http://localhost:3000.
 
-**Locally**
+## **Locally**
 
-- client:
+### client:
 
 ```
 cd song-list/packages/client
@@ -64,7 +64,7 @@ cd song-list/packages/client
      npm start
 ```
 
-- server:
+### server:
 
 ```
 cd song-list/packages/server
@@ -74,8 +74,8 @@ cd song-list/packages/server
 
 ```
 
-- database:
+### database:
 
-* Install locally postgressql
-* Create user with the name 'songlist'
-* Create database with the name 'songlist'
+- Install locally postgressql
+- Create user with the name 'songlist'
+- Create database with the name 'songlist'
