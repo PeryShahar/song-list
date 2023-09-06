@@ -22,7 +22,7 @@ export default function SongList() {
 
     return <main>
         <h1 className="song-list-title">Song List</h1>
-        <table>
+        <table className="song-list-table">
             <thead>
                 <tr>
                     <th>Song name</th>
@@ -41,6 +41,4 @@ export default function SongList() {
             </tbody>
         </table>
     </main>
-    {/* {data?.data as any} */ }
-
 }

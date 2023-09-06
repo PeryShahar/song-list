@@ -12,7 +12,7 @@ main {
 }
 
 
-table {
+.song-list-table {
   border-collapse: collapse;
   width: 80%; 
   text-align: left;

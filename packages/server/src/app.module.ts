@@ -5,9 +5,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { SongsModule } from './songs/songs.module';
 import { CsvModule } from './csv/csv.module';
-import { CsvService } from './csv/csv.service';
 import { Song } from './songs/entities/song.entity';
-import { SongsService } from './songs/songs.service';
 
 @Module({
   imports: [
