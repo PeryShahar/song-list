@@ -55,7 +55,7 @@ Client (React) is available on http://localhost:3000.
 
 **Locally**
 
-# client:
+- client:
 
 ```
 cd song-list/packages/client
@@ -64,7 +64,7 @@ cd song-list/packages/client
      npm start
 ```
 
-# server:
+- server:
 
 ```
 cd song-list/packages/server
@@ -74,8 +74,8 @@ cd song-list/packages/server
 
 ```
 
-# database:
+- database:
 
-- install locally postgressql
-- create user with the name 'songlist'
-- create database with the name 'songlist'
+* Install locally postgressql
+* Create user with the name 'songlist'
+* Create database with the name 'songlist'
