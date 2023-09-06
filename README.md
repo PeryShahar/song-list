@@ -12,7 +12,7 @@ Before you dive into running this project, please take a moment to review the fo
 
 - Monorepo: I haven't had the opportunity to implement a monorepo myself, so I wanted to challenge myself and give it a try.
 
-- Create React App: For creating my React application, I ultimately opted to use 'npx create-react-app.' While I acknowledge that it's been around for a while, I preferred its simplicity. React's documentation suggests alternative meta-frameworks options like Next and Remix, or use Vite.
+- Create React App: For creating my React application, I ultimately preferred to use 'npx create-react-app.' While I acknowledge that it's been around for a while, I preferred its simplicity. React's documentation suggests alternative meta-frameworks options like Next and Remix, or use Vite.
 
 - ORM: I went for TypeOrm because it's familiar to me, but I'm considering exploring Prisma as well.
 
@@ -38,13 +38,24 @@ git clone https://github.com/PeryShahar/song-list.git
 
 **Docker:**
 
-- Install all the dependencies with npm run prepare-dev-env
-- To start the dev environment, type in docker-compose up inside the root folder (song-list).
-  Client (React) is available on http://localhost:3000.
+- Install all the dependencies with
+
+```
+npm run prepare-dev-env
+```
+
+- To start the dev environment, type in:
+
+```
+docker-compose up
+```
+
+inside the root folder (song-list).
+Client (React) is available on http://localhost:3000.
 
 **Locally**
 
-- client:
+# client:
 
 ```
 cd song-list/packages/client
@@ -53,7 +64,7 @@ cd song-list/packages/client
      npm start
 ```
 
-- server:
+# server:
 
 ```
 cd song-list/packages/server
@@ -63,8 +74,8 @@ cd song-list/packages/server
 
 ```
 
-- database:
+# database:
 
--- install locally postgressql
--- create user with the name 'songlist'
--- create database with the name 'songlist'
+- install locally postgressql
+- create user with the name 'songlist'
+- create database with the name 'songlist'
