@@ -77,5 +77,5 @@ cd song-list/packages/server
 ### database:
 
 - Install locally postgressql
-- Create user with the name 'songlist'
-- Create database with the name 'songlist'
+- Create user with the name 'postgres'
+- Create database with the name 'postgres'
