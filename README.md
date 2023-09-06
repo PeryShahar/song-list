@@ -24,7 +24,7 @@ Before you dive into running this project, please take a moment to review the fo
 
 - Swagger/OpenAPI is an excellent resource for documenting your API. I've recently implemented it into the project I'm currently working on at my job.
 
-- Production-Ready: I understand the core concept of preparing a project for production, but some configuration details may be missing in the Docker Compose file, environment variables, and certain scripts. (I've included the init.sql file for reference.)
+- Production-Ready: I understand the core concept of preparing a project for production, but some configuration details may be missing in the Docker Compose file, environment variables, and certain scripts.
 
 - Tests: Regarding testing, if I had more time available, I would consider implementing unit and integration tests, possibly utilizing tools like Jest and Playwright.
 
