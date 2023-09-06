@@ -1,6 +1,19 @@
 version: "3.5"
 
 services:
+  db:
+    image: postgres:13.1
+    restart: always
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    container_name: postgres
+    volumes:
+      - ./pg-data:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+
   nestjs:
     build:
       context: ./packages/server
@@ -9,6 +22,8 @@ services:
      - ./packages/server/.env.dev
     ports:
       - 3001:3001
+    depends_on:
+      - db
     volumes:
       - ./packages/server/:/app
 
@@ -23,17 +38,17 @@ services:
     volumes:
       - ./packages/client/:/app
 
-  db:
-    image: postgres:13.1
+  pgadmin:
+    image: dpage/pgadmin4
     restart: always
+    container_name: nest-pgadmin4
     environment:
-      POSTGRES_PASSWORD: postgres
-    container_name: postgres
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - PGADMIN_DEFAULT_EMAIL=admin@admin.com
+      - PGADMIN_DEFAULT_PASSWORD=pgadmin4
     ports:
-     - 5432:5432
+      - '5050:80'
+    depends_on:
+      - db
 
   openapi_generator:
     build:
@@ -44,5 +59,3 @@ services:
     volumes:
       - ./tools/openapi-generator/.build:/local/out
 
-volumes:
-  postgres_data:

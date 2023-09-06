@@ -13,11 +13,11 @@ import { SongsService } from './songs/songs.service';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'localhost',
+      host: 'db',
       port: 5432,
-      username: 'songlist',
-      password: 'songlist',
-      database: 'songlist',
+      username: 'postgres',
+      password: 'postgres',
+      database: 'postgres',
       entities: [Song],
       synchronize: true, //should be used with caution in production
       autoLoadEntities: true,
