@@ -1,5 +1,7 @@
 ## NOTES
 
+**This project was primarily developed as a personal learning exercise, aimed at honing my skills in setting up a full-stack application using a range of technologies and libraries. The core functionality of the project involves loading a CSV file, converting it to JSON format, and persisting the data in a database. Subsequently, this data is displayed on the client-side, where songs are listed in alphabetical order for user access.**
+
 Before you dive into running this project, please take a moment to review the following notes:
 
 - Setting up and configuring files to work with Docker and Docker Compose was a relatively new experience for me. In my job, I usually work on projects where all the configurations are already in place. Therefore, I did my best to grasp the best practices and fundamental concepts of the tools I'm using.
@@ -18,7 +20,7 @@ Before you dive into running this project, please take a moment to review the fo
 
 - Data Fetching: There are various methods to fetch data, ranging from AJAX requests to using libraries like Fetch, Axios, and React Query, which builds upon these. I decided to use axios, as it's sufficient for simpler applications, in addition - I could add proxy to make requests cleaner (axios.get('/api/songs')).
 
-- Postgres: Although I lacked prior experience with it, I chose to use this database. My motivation was to learn new commands, and it aligns with the database you all are using.
+- Postgres: Although I lacked prior experience with it, I chose to use this database. My motivation was to learn new commands, and it aligns with the fact it's becoming popular now days.
 
 - Prettier, Husky, and More: I didn't have sufficient time to configure all these tools properly and delve into Husky and pre-commit. However, a well-structured project should ideally include them.
 
